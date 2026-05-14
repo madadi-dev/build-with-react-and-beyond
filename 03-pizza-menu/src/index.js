@@ -65,7 +65,7 @@ function Menu() {
 
         <ul className="pizzas">
             {pizzaData.map((pizza => (
-                <Pizza pizzaOpj={pizza} key={pizza.name} />
+                <Pizza pizzaOpj={pizza} key={pizza.name}/>
             )))}
         </ul>
 
@@ -102,7 +102,13 @@ function Footer() {
 
 
     return (<footer className="footer">
-        {new Date().toLocaleDateString()}. We're currently open
+        {isOpen && (
+            <div className="order">
+
+                <p>We're open until {closeHour}:00. Come visit us or order online.</p>
+                <button className="btn">Order</button>
+            </div>
+        )}
     </footer>);
 }
 
