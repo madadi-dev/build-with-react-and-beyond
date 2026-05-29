@@ -24,7 +24,7 @@ export default function App() {
         //BAD PRACTICE
         // test.name = "Farzan";
 
-        // setTest({ name: "My Love2" });
+        // setTest({ name: "My Love" });
     }
 
     return <>
